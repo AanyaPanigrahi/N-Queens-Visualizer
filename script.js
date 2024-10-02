@@ -42,7 +42,7 @@ async function backtrack(row) {
     if (row === n) {
         solutions.push(board.map(row => row.slice()));
         displayBoard(solutionsDiv, board);
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Show solution for a second before backtracking
+        await new Promise(resolve => setTimeout(resolve, 1000)); 
         return;
     }
 
